@@ -1,0 +1,7 @@
+c:\users\елена\source\repos\Zadacha_№1\Zadacha_№1\bin\Debug\Zadacha_№1.exe.config
+c:\users\елена\source\repos\Zadacha_№1\Zadacha_№1\bin\Debug\Zadacha_№1.exe
+c:\users\елена\source\repos\Zadacha_№1\Zadacha_№1\bin\Debug\Zadacha_№1.pdb
+c:\users\елена\source\repos\Zadacha_№1\Zadacha_№1\obj\Debug\Zadacha_№1.csprojAssemblyReference.cache
+c:\users\елена\source\repos\Zadacha_№1\Zadacha_№1\obj\Debug\Zadacha_№1.csproj.CoreCompileInputs.cache
+c:\users\елена\source\repos\Zadacha_№1\Zadacha_№1\obj\Debug\Zadacha_№1.exe
+c:\users\елена\source\repos\Zadacha_№1\Zadacha_№1\obj\Debug\Zadacha_№1.pdb
