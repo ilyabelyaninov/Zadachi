@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] nums = new int[5, 5];
+            Random rnd = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                for (int n = 0; n < 5; n++)
+                {
+                    nums[i, n] = rnd.Next(0, 2);
+
+                }
+
+            }
+            Console.WriteLine("_________________");
+            int y = 1;
+            while (y == 1)
+            {
+
+                Console.WriteLine("¬ведите номер строки от 0 до 4");
+                int p = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("¬ведите номер столбца от 0 до 4");
+                int f = Convert.ToInt32(Console.ReadLine());
+                if (nums[p, f] == 1)
+                {
+                    Console.WriteLine("вы проиграли");
+                    y = 0;
+                }
+                if (nums[p, f] == 0)
+                {
+                    Console.WriteLine("вы выиграли");
+                }
+                
+
+                Console.ReadKey();
+
+
+            }
+        }
+    }
+}
