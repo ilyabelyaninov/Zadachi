@@ -1,0 +1,315 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Krestiki_noliki
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+                string[,] nums = new string[3, 3];
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int k = 0; k < 3; k++)
+                    {
+                        nums[i, k] = ".";
+                        Console.Write(nums[i, k]);
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine("_____________");
+                string g = "X";
+                string v = "O";
+            Console.WriteLine("Игрок 1 ирает X");
+            Console.WriteLine("Игрок 2 ирает O");
+
+            for (int q = 0; q < 1; q++)
+            {
+                for (int l = 0; l < 3; l++)
+                {
+                    Console.WriteLine("игрок 1, введите номер строки от 0 до 2");
+                    int t = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("игрок 1, введите номер столбца от 0 до 2");
+
+                    int b = Convert.ToInt32(Console.ReadLine());
+                    nums[t, b] = g;
+                    Console.WriteLine(" ");
+
+                    for (int p = 0; p < 3; p++)
+                    {
+                        for (int m = 0; m < 3; m++)
+                        {
+                            Console.Write(nums[p, m]);
+                        }
+                        Console.WriteLine();
+                    }
+                    Console.WriteLine("_____________");
+
+                    Console.WriteLine("игрок 2, введите номер строки от 0 до 2");
+                    int c = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("игрок 2, введите номер столбца от 0 до 2");
+                    int z = Convert.ToInt32(Console.ReadLine());
+                    nums[c, z] = v;
+                    Console.WriteLine(" ");
+
+                    for (int p = 0; p < 3; p++)
+                    {
+                        for (int m = 0; m < 3; m++)
+                        {
+                            Console.Write(nums[p, m]);
+                        }
+                        Console.WriteLine();
+                    }
+                    Console.WriteLine("_____________");
+                }
+
+
+
+                     if (nums[0, 0] == nums[0, 1])
+                    {
+                    if (nums[0, 0] == nums[0, 2])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[0, 0]);
+                        break;
+                    }
+                }
+                if (nums[1, 0] == nums[1, 1])
+                {
+                    if (nums[1, 0] == nums[1, 2])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[1, 0]);
+                        break;
+                    }
+                }
+                if (nums[2, 0] == nums[2, 1])
+                {
+                    if (nums[2, 0] == nums[2, 2])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[2, 0]);
+                        break;
+                    }
+                }
+                if (nums[0, 0] == nums[1, 0])
+                {
+                    if (nums[0, 0] == nums[2, 0])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[0, 0]);
+                        break;
+                    }
+                }
+                if (nums[0, 1] == nums[1, 1])
+                {
+                    if (nums[0, 1] == nums[2, 1])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[0, 1]);
+                        break;
+                    }
+                }
+                if (nums[0, 2] == nums[1, 2])
+                {
+                    if (nums[0, 2] == nums[2, 2])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[0, 2]);
+                        break;
+                    }
+                }
+                if (nums[0, 0] == nums[1, 1])
+                {
+                    if (nums[0, 0] == nums[2, 2])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[0, 0]);
+                        break;
+                    }
+                }
+                if (nums[0, 2] == nums[1, 1])
+                {
+                    if (nums[0, 2] == nums[2, 0])
+                    {
+                        Console.WriteLine("Победил игрок, игравший " + nums[0, 2]);
+                        break;
+                    }
+                }
+
+            }
+            for (int q = 0; q < 1; q++)
+            {
+                for (int l = 0; l < 2; l++)
+                {
+                    Console.WriteLine("игрок 1, введите номер строки от 0 до 2");
+                    int t = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("игрок 1, введите номер столбца от 0 до 2");
+
+                    int b = Convert.ToInt32(Console.ReadLine());
+                    nums[t, b] = g;
+                    Console.WriteLine(" ");
+                    for (int p = 0; p < 3; p++)
+                    {
+                        for (int m = 0; m < 3; m++)
+                        {
+                            Console.Write(nums[p, m]);
+                        }
+                        Console.WriteLine();
+                    }
+                    Console.WriteLine("_____________");
+
+                    if (nums[0, 0] == nums[0, 1])
+                    {
+                        if (nums[0, 0] == nums[0, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[0, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[1, 0] == nums[1, 1])
+                    {
+                        if (nums[1, 0] == nums[1, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[1, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[2, 0] == nums[2, 1])
+                    {
+                        if (nums[2, 0] == nums[2, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[2, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 0] == nums[1, 0])
+                    {
+                        if (nums[0, 0] == nums[2, 0])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[0, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 1] == nums[1, 1])
+                    {
+                        if (nums[0, 1] == nums[2, 1])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[0, 1]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 2] == nums[1, 2])
+                    {
+                        if (nums[0, 2] == nums[2, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[0, 2]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 0] == nums[1, 1])
+                    {
+                        if (nums[0, 0] == nums[2, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[0, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 2] == nums[1, 1])
+                    {
+                        if (nums[0, 2] == nums[2, 0])
+                        {
+                            Console.WriteLine("Победил игрок, игравший " + nums[0, 2]);
+                            break;
+                        }
+                    }
+
+                    Console.WriteLine("игрок 2, введите номер строки от 0 до 2");
+                    int c = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("игрок 2, введите номер столбца от 0 до 2");
+                    int z = Convert.ToInt32(Console.ReadLine());
+                    nums[c, z] = v;
+                    Console.WriteLine(" ");
+
+
+                    for (int p = 0; p < 3; p++)
+                    {
+                        for (int m = 0; m < 3; m++)
+                        {
+                            Console.Write(nums[p, m]);
+                        }
+                        Console.WriteLine();
+                    }
+                    Console.WriteLine("_____________");
+                    if (nums[0, 0] == nums[0, 1])
+                    {
+                        if (nums[0, 0] == nums[0, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[0, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[1, 0] == nums[1, 1])
+                    {
+                        if (nums[1, 0] == nums[1, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[1, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[2, 0] == nums[2, 1])
+                    {
+                        if (nums[2, 0] == nums[2, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[2, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 0] == nums[1, 0])
+                    {
+                        if (nums[0, 0] == nums[2, 0])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[0, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 1] == nums[1, 1])
+                    {
+                        if (nums[0, 1] == nums[2, 1])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[0, 1]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 2] == nums[1, 2])
+                    {
+                        if (nums[0, 2] == nums[2, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[0, 2]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 0] == nums[1, 1])
+                    {
+                        if (nums[0, 0] == nums[2, 2])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[0, 0]);
+                            break;
+                        }
+                    }
+                    if (nums[0, 2] == nums[1, 1])
+                    {
+                        if (nums[0, 2] == nums[2, 0])
+                        {
+                            Console.WriteLine("Победил игрок, игравший" + nums[0, 2]);
+                            break;
+                        }
+                    }
+                }
+            }
+                Console.ReadKey();
+            }
+        }
+    }
+
